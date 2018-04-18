@@ -1,0 +1,144 @@
+[debug] [2018-04-18T18:14:25.558Z] ----------------------------------------------------------------------
+[debug] [2018-04-18T18:14:25.559Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login --reauth
+[debug] [2018-04-18T18:14:25.559Z] CLI Version:   3.18.4
+[debug] [2018-04-18T18:14:25.559Z] Platform:      linux
+[debug] [2018-04-18T18:14:25.559Z] Node Version:  v8.10.0
+[debug] [2018-04-18T18:14:25.560Z] Time:          Wed Apr 18 2018 15:14:25 GMT-0300 (-03)
+[debug] [2018-04-18T18:14:25.560Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=369134755&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2018-04-18T18:14:38.711Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAA8iUOmKALdY87lSL3YpKQdRC867LeX9RGc2Nk7CXCZ_gLb2VbzCQ-SicthsywkJGeJQlPKiT8nipj-d0-oE9E',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:14:38 GMT-0300 (-03)
+[debug] [2018-04-18T18:16:38.761Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAA8iUOmKALdY87lSL3YpKQdRC867LeX9RGc2Nk7CXCZ_gLb2VbzCQ-SicthsywkJGeJQlPKiT8nipj-d0-oE9E',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:16:38 GMT-0300 (-03)
+[debug] [2018-04-18T18:16:45.974Z] Token Fetch Error: Error
+    at new FirebaseError (/usr/local/lib/node_modules/firebase-tools/lib/error.js:11:16)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:35:11)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:878:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at ClientRequest.onError (/usr/local/lib/node_modules/firebase-tools/node_modules/tunnel-agent/index.js:179:21)
+    at Object.onceWrapper (events.js:315:30)
+[debug] [2018-04-18T18:18:19.198Z] ----------------------------------------------------------------------
+[debug] [2018-04-18T18:18:19.199Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login --reauth
+[debug] [2018-04-18T18:18:19.200Z] CLI Version:   3.18.4
+[debug] [2018-04-18T18:18:19.200Z] Platform:      linux
+[debug] [2018-04-18T18:18:19.200Z] Node Version:  v8.10.0
+[debug] [2018-04-18T18:18:19.200Z] Time:          Wed Apr 18 2018 15:18:19 GMT-0300 (-03)
+[debug] [2018-04-18T18:18:19.200Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=502439019&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2018-04-18T18:18:50.644Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAB0bHN8HehBIVI_0fA3eNOlAmFcH9-3rueueMQvtyagPf5cmTYd2UWfVEC5xa0w0DeBbKre5l9CHBQmbBKuU20',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:18:50 GMT-0300 (-03)
+[debug] [2018-04-18T18:20:50.709Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAB0bHN8HehBIVI_0fA3eNOlAmFcH9-3rueueMQvtyagPf5cmTYd2UWfVEC5xa0w0DeBbKre5l9CHBQmbBKuU20',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:20:50 GMT-0300 (-03)
+[debug] [2018-04-18T18:20:57.877Z] Token Fetch Error: Error
+    at new FirebaseError (/usr/local/lib/node_modules/firebase-tools/lib/error.js:11:16)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:35:11)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:878:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at ClientRequest.onError (/usr/local/lib/node_modules/firebase-tools/node_modules/tunnel-agent/index.js:179:21)
+    at Object.onceWrapper (events.js:315:30)
+[debug] [2018-04-18T18:22:50.788Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAB0bHN8HehBIVI_0fA3eNOlAmFcH9-3rueueMQvtyagPf5cmTYd2UWfVEC5xa0w0DeBbKre5l9CHBQmbBKuU20',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:22:50 GMT-0300 (-03)
+[debug] [2018-04-18T18:22:57.938Z] Token Fetch Error: Error
+    at new FirebaseError (/usr/local/lib/node_modules/firebase-tools/lib/error.js:11:16)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:35:11)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:878:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at ClientRequest.onError (/usr/local/lib/node_modules/firebase-tools/node_modules/tunnel-agent/index.js:179:21)
+    at Object.onceWrapper (events.js:315:30)
+[debug] [2018-04-18T18:24:50.884Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAB0bHN8HehBIVI_0fA3eNOlAmFcH9-3rueueMQvtyagPf5cmTYd2UWfVEC5xa0w0DeBbKre5l9CHBQmbBKuU20',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:24:50 GMT-0300 (-03)
+[debug] [2018-04-18T18:24:58.001Z] Token Fetch Error: Error
+    at new FirebaseError (/usr/local/lib/node_modules/firebase-tools/lib/error.js:11:16)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:35:11)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:878:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at ClientRequest.onError (/usr/local/lib/node_modules/firebase-tools/node_modules/tunnel-agent/index.js:179:21)
+    at Object.onceWrapper (events.js:315:30)
+[debug] [2018-04-18T18:26:55.990Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAB0bHN8HehBIVI_0fA3eNOlAmFcH9-3rueueMQvtyagPf5cmTYd2UWfVEC5xa0w0DeBbKre5l9CHBQmbBKuU20',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:26:55 GMT-0300 (-03)
+[debug] [2018-04-18T18:26:58.193Z] Token Fetch Error: Error
+    at new FirebaseError (/usr/local/lib/node_modules/firebase-tools/lib/error.js:11:16)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:35:11)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:878:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at ClientRequest.onError (/usr/local/lib/node_modules/firebase-tools/node_modules/tunnel-agent/index.js:179:21)
+    at Object.onceWrapper (events.js:315:30)
+[debug] [2018-04-18T18:27:36.140Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAB0bHN8HehBIVI_0fA3eNOlAmFcH9-3rueueMQvtyagPf5cmTYd2UWfVEC5xa0w0DeBbKre5l9CHBQmbBKuU20',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:27:36 GMT-0300 (-03)
+[debug] [2018-04-18T18:27:37.042Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAB0bHN8HehBIVI_0fA3eNOlAmFcH9-3rueueMQvtyagPf5cmTYd2UWfVEC5xa0w0DeBbKre5l9CHBQmbBKuU20',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Apr 18 2018 15:27:37 GMT-0300 (-03)
