@@ -17,8 +17,8 @@
         </q-btn>
 
         <q-toolbar-title>
-          Quasar App
-          <div slot="subtitle">Running on Quasar v{{ $q.version }}</div>
+          Carneiro FC
+         <!-- <div slot="subtitle">Running on Quasar v{{ $q.version }}</div> -->
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>
@@ -27,38 +27,26 @@
       v-model="leftDrawerOpen"
       :content-class="$q.theme === 'mat' ? 'bg-grey-2' : null"
     >
+    <div id="profile">
+        <img src="~assets/profile.png" alt="" class="inline-block">
+    </div>
       <q-list
         no-border
         link
         inset-delimiter
       >
-        <!-- <q-list-header>Essential Links</q-list-header>
-        <q-item @click.native="openURL('http://quasar-framework.org')">
-          <q-item-side icon="school" />
-          <q-item-main label="Docs" sublabel="quasar-framework.org" />
-        </q-item>
-        <q-item @click.native="openURL('https://github.com/quasarframework/')">
-          <q-item-side icon="code" />
-          <q-item-main label="GitHub" sublabel="github.com/quasarframework" />
-        </q-item>
-        <q-item @click.native="openURL('https://discord.gg/5TDhbDg')">
-          <q-item-side icon="chat" />
-          <q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg" />
-        </q-item>
-        <q-item @click.native="openURL('http://forum.quasar-framework.org')">
-          <q-item-side icon="record_voice_over" />
-          <q-item-main label="Forum" sublabel="forum.quasar-framework.org" />
-        </q-item>
-        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Twitter" sublabel="@quasarframework" />
-        </q-item>-->
-          <q-list-header>Nome do Jogador</q-list-header>
-
-        <q-item>
-          <router-link to="/parcial"></router-link>
+        <q-list-header>Nome do Jogador</q-list-header>
+        <q-item link>
           <q-item-side icon="dashboard"/>
-          <q-item-main label="dashboard" />
+          <router-link to="/">
+            <q-item-main label="dashboard" />
+          </router-link>
+        </q-item>
+        <q-item link>
+          <q-item-side icon="group"/>
+          <router-link to="/parcial">
+            <q-item-main label="parciais" />
+          </router-link>
         </q-item>
       </q-list>
 
@@ -87,4 +75,25 @@ export default {
 </script>
 
 <style>
+  #profile {
+     height: 170px;
+     width: 100%;
+     border-bottom: 2px gray solid ;
+  }
+
+  #profile img {
+    border-radius: 50%;
+    width: 50%;
+    margin: 3% 0 0 20%;
+
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:visited, :link {
+    color: black;
+  }
 </style>
