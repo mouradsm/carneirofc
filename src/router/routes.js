@@ -5,7 +5,8 @@ export default [
     component: () => import('layouts/default'),
     children: [
       { path: '', component: () => import('pages/index') },
-      { path: 'parcial', component: () => import('pages/parcial') }
+      { path: 'parcial', component: () => import('pages/parcial') },
+      { path: 'login', component: () => import('pages/login') }
     ]
   },
 

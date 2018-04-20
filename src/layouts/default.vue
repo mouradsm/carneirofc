@@ -49,7 +49,7 @@
           </router-link>
         </q-item>
       </q-list>
-
+  <button @click="logout">LOGOUT</button>
     </q-layout-drawer>
 
     <q-page-container>
@@ -59,8 +59,6 @@
 </template>
 
 <script>
-import { openURL } from 'quasar'
-
 export default {
   name: 'LayoutDefault',
   data () {
@@ -69,7 +67,16 @@ export default {
     }
   },
   methods: {
-    openURL
+    logout () {
+      this.$auth.signOut().then(() => {
+        console.log('Deslogado')
+      })
+    }
+  },
+  beforeCreate () {
+    this.$auth.onAuthStateChanged(user => {
+      if (!user) { this.$router.push({path: 'login'}) }
+    })
   }
 }
 </script>
