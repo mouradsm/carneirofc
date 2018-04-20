@@ -28,7 +28,7 @@
       :content-class="$q.theme === 'mat' ? 'bg-grey-2' : null"
     >
     <div id="profile">
-        <img src="~assets/profile.png" alt="" class="inline-block">
+        <img :src=user.photoURL class="inline-block">
     </div>
       <q-list
         no-border
@@ -64,6 +64,7 @@ export default {
   data () {
     return {
       leftDrawerOpen: this.$q.platform.is.desktop
+
     }
   },
   methods: {
@@ -73,10 +74,18 @@ export default {
       })
     }
   },
+  computed: {
+    user () {
+      return this.$store.state.users.user || {}
+    }
+  },
   beforeCreate () {
     this.$auth.onAuthStateChanged(user => {
       if (!user) { this.$router.push({path: 'login'}) }
     })
+  },
+  mounted () {
+    console.log(this.user)
   }
 }
 </script>
@@ -85,7 +94,7 @@ export default {
   #profile {
      height: 170px;
      width: 100%;
-     border-bottom: 2px gray solid ;
+     border-bottom: 2px gray solid;
   }
 
   #profile img {

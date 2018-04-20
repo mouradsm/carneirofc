@@ -9,7 +9,16 @@
 </style>
 
 <script>
+import firebase from 'firebase'
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  data () {
+    return {
+
+    }
+  },
+  created () {
+    this.$store.commit('users/setUser', firebase.auth().currentUser)
+  }
 }
 </script>
