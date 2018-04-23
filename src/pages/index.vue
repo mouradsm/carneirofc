@@ -18,12 +18,17 @@ export default {
     }
   },
   methods: {
-    vai () {
-      console.log(this.user)
-    }
   },
   created () {
     this.user = this.$store.state.users.user
+    this.$db.ref('users/' + this.user.uid).once('value').then(function (snapshot) {
+      let u = snapshot.val()
+      console.log(u)
+    })
+
+    this.$db.ref('users/' + this.user.uid).set({
+      score: 0.0
+    })
   }
 }
 </script>
