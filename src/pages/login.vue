@@ -13,8 +13,7 @@ export default {
   name: 'PageLogin',
   data () {
     return {
-      loading: true,
-      user: {}
+      loading: true
     }
   },
   mounted () {
@@ -23,7 +22,6 @@ export default {
       signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID
-        //  firebase.auth.FacebookAuthProvider.PROVIDER_ID
       ],
       signInFlow: 'redirect'
     }

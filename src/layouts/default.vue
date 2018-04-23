@@ -12,7 +12,7 @@
           round
           @click="leftDrawerOpen = !leftDrawerOpen"
           aria-label="Menu"
-          v-show="user"
+          v-show="user.uid"
         >
           <q-icon name="menu" />
         </q-btn>
@@ -27,7 +27,7 @@
     <q-layout-drawer
       v-model="leftDrawerOpen"
       :content-class="$q.theme === 'mat' ? 'bg-grey-2' : null"
-      v-if="user"
+      v-if="user.uid"
     >
 
       <q-list
@@ -85,9 +85,11 @@ export default {
   },
   beforeCreate () {
     this.$auth.onAuthStateChanged(user => {
-      if (!user) { this.$router.push({path: 'login'}) }
-
-      this.$store.commit('users/setUser', user)
+      if (!user) {
+        this.$router.push({path: 'login'})
+      } else {
+        this.$store.commit('users/setUser', user)
+      }
     })
   },
   mounted () {

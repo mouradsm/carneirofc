@@ -6,7 +6,8 @@ module.exports = function (ctx) {
     plugins: [
       'axios',
       'firebase',
-      'firebaseui'
+      'firebaseui',
+      'lodash'
     ],
     css: [
       'app.styl'
