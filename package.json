@@ -13,7 +13,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "firebase": "^4.13.0",
-    "firebaseui": "^2.7.0"
+    "firebaseui": "^2.7.0",
+    "vuefire": "^1.4.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
