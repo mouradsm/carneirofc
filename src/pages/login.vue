@@ -14,35 +14,21 @@ export default {
   data () {
     return {
       loading: true,
-      user: null
+      user: {}
     }
   },
   mounted () {
-    var uiConfig = {
-      signInSuccessUrl: '/',
+    let uiConfig = {
+      signInSuccessUrl: '/parcial',
       signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID
-      ]
+        //  firebase.auth.FacebookAuthProvider.PROVIDER_ID
+      ],
+      signInFlow: 'redirect'
     }
-    var ui = new firebaseui.auth.AuthUI(firebase.auth())
+    let ui = new firebaseui.auth.AuthUI(firebase.auth())
     ui.start('#firebaseui-auth-container', uiConfig)
-  },
-  methods: {
-    // signInWithGoogle () {
-    //   const provider = new this.$auth.GoogleAuthProvider()
-    //   this.$auth().signInWithRedirect(provider).then((result) => {
-    //     this.user = result.user
-    //     console.log(this.user)
-    //   })
-    // },
-    beforeCreate () {
-      this.$auth.onAuthStateChanged(user => {
-        if (user) { this.$router.push({path: '/'}) }
-      })
-
-      this.loading = false
-    }
   }
 }
 

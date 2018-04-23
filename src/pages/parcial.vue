@@ -42,7 +42,7 @@
       <div>
         <img src="~assets/nobody_m.original.jpg">
         <span class="nome">Goku</span>
-        <span class="pontos">11\.00</span>
+        <span class="pontos">11.00</span>
       </div>
     </q-card-main>
   </q-card>

@@ -12,6 +12,7 @@
           round
           @click="leftDrawerOpen = !leftDrawerOpen"
           aria-label="Menu"
+          v-show="user"
         >
           <q-icon name="menu" />
         </q-btn>
@@ -26,15 +27,17 @@
     <q-layout-drawer
       v-model="leftDrawerOpen"
       :content-class="$q.theme === 'mat' ? 'bg-grey-2' : null"
+      v-if="user"
     >
-    <div id="profile">
-        <img :src=user.photoURL class="inline-block">
-    </div>
+
       <q-list
         no-border
         link
         inset-delimiter
       >
+
+        <profile :photo=user.photoURL />
+
         <q-list-header>Nome do Jogador</q-list-header>
         <q-item link>
           <q-item-side icon="dashboard"/>
@@ -49,7 +52,7 @@
           </router-link>
         </q-item>
       </q-list>
-  <button @click="logout">LOGOUT</button>
+    <q-btn @click="logout" class="full-width fixed-bottom" label="Logout" color="deep-orange" icon="exit_to_app"></q-btn>
     </q-layout-drawer>
 
     <q-page-container>
@@ -59,12 +62,13 @@
 </template>
 
 <script>
+import Profile from '../components/profile'
 export default {
   name: 'LayoutDefault',
+  components: {Profile},
   data () {
     return {
       leftDrawerOpen: this.$q.platform.is.desktop
-
     }
   },
   methods: {
@@ -76,34 +80,22 @@ export default {
   },
   computed: {
     user () {
-      return this.$store.state.users.user || {}
+      return this.$store.state.users.user
     }
   },
   beforeCreate () {
     this.$auth.onAuthStateChanged(user => {
       if (!user) { this.$router.push({path: 'login'}) }
+
+      this.$store.commit('users/setUser', user)
     })
   },
   mounted () {
-    console.log(this.user)
   }
 }
 </script>
 
 <style>
-  #profile {
-     height: 170px;
-     width: 100%;
-     border-bottom: 2px gray solid;
-  }
-
-  #profile img {
-    border-radius: 50%;
-    width: 50%;
-    margin: 3% 0 0 20%;
-
-  }
-
   a {
     text-decoration: none;
     font-weight: bold;
