@@ -13,7 +13,6 @@ export default {
   name: 'PageLogin',
   data () {
     return {
-      loading: true
     }
   },
   mounted () {
@@ -29,7 +28,6 @@ export default {
     ui.start('#firebaseui-auth-container', uiConfig)
   }
 }
-
 </script>
 
 <style>

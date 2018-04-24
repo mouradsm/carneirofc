@@ -74,6 +74,7 @@ export default {
   methods: {
     logout () {
       this.$auth.signOut().then(() => {
+        this.$store.commit('users/logout')
         console.log('Deslogado')
       })
     }
@@ -88,7 +89,7 @@ export default {
       if (!user) {
         this.$router.push({path: 'login'})
       } else {
-        this.$store.commit('users/setUser', user)
+        this.$store.commit('users/login', user)
       }
     })
   },
